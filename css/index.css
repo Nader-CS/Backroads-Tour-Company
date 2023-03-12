@@ -511,6 +511,9 @@ a {
     color: rgb(189, 186, 186);
     transform: translateY(-10%);
   }
+  .hero {
+    min-height: calc(100vh - 62px);
+  }
 }
 
 /* ################## end of navbar ######################### */
