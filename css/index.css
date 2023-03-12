@@ -467,6 +467,14 @@ a {
   background: rgb(184, 180, 180);
   padding-left: 2.5rem;
 }
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+}
+.show-nav-links {
+  height: 271.43px;
+}
 @media screen and (min-width: 992px) {
   .nav-toogle {
     display: none;
