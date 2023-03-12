@@ -431,9 +431,8 @@ a {
 }
 /* ################## end of footer ##################### */
 /* ################## navbar ######################### */
-.navbar {
-}
-.nav-icon {
+
+.nav-icons {
   display: none;
 }
 .nav-header {
@@ -468,4 +467,50 @@ a {
   background: rgb(184, 180, 180);
   padding-left: 2.5rem;
 }
+@media screen and (min-width: 992px) {
+  .nav-toogle {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    height: auto;
+  }
+  .nav-icons {
+    display: flex;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-link {
+    padding: 0;
+    margin-right: 0.7rem;
+  }
+  .nav-link:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .nav-icon {
+    margin-right: 0.7rem;
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+    transition: var(--mainTransition);
+  }
+  .nav-icon:hover {
+    color: rgb(189, 186, 186);
+    transform: translateY(-10%);
+  }
+}
+
 /* ################## end of navbar ######################### */
