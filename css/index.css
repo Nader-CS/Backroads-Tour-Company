@@ -33,7 +33,7 @@ body {
 }
 /* ############### end of body ####################### */
 /* ############### global styles ################### */
-img {
+img:not(.nav-logo) {
   width: 100%;
   display: block;
 }
@@ -430,3 +430,42 @@ a {
   letter-spacing: var(--mainSpacing);
 }
 /* ################## end of footer ##################### */
+/* ################## navbar ######################### */
+.navbar {
+}
+.nav-icon {
+  display: none;
+}
+.nav-header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-toogle {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+  cursor: pointer;
+  transition: var(--mainTransition);
+}
+.nav-toogle:hover {
+  transform: scale(1.2);
+}
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  color: var(--mainBlack);
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+.nav-link:hover {
+  color: var(--primaryColor);
+  background: rgb(184, 180, 180);
+  padding-left: 2.5rem;
+}
+/* ################## end of navbar ######################### */
