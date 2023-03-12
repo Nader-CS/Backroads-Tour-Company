@@ -475,6 +475,16 @@ a {
 .show-nav-links {
   height: 271.43px;
 }
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--mainGrey);
+  transition: var(--mainTransition);
+  box-shadow: var(--lightShadow);
+  z-index: 1;
+}
 @media screen and (min-width: 992px) {
   .nav-toogle {
     display: none;
